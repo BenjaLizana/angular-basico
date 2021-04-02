@@ -1,0 +1,20 @@
+<p>listado productos!</p>
+<div>
+    <h3 *ngIf="productoBorrado; else noBorrado">Producto Borrado : {{productoBorrado}}</h3>
+</div>
+
+<ng-template #noBorrado>
+    <h3>No ha borrado nada.</h3>
+</ng-template>
+
+
+
+<button (click)="borrar()">Borrar</button>
+
+<ul>
+    <li *ngFor="let producto of productos; let i = index">
+        {{i + 1 }} - {{ producto }}
+    </li>
+
+</ul>
+

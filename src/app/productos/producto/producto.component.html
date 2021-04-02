@@ -1,0 +1,25 @@
+<h1>{{nombre}}</h1>
+
+<dl>
+    <td>Nombre:</td>
+    <dd>{{nombre}}</dd>
+
+    <td>Color</td>
+    <dd>{{color}}</dd>
+
+    <td>Talla:</td>
+    <dd>{{talla}}</dd>
+
+    <td>Función</td>
+    <dd>{{obtenerNombre()}}</dd>
+
+    <td>Capitalizado</td>
+    <dd>{{NombreCapitalizado}}</dd>
+    
+</dl>
+
+<button (click)="cambiarNombre()">Cambiar Producto</button>
+
+<button (click)="cambiarColor()">Cambiar Color</button>
+
+<button (click)="cambiarTalla()">Cambiar Talla </button>
